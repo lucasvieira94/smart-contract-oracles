@@ -9,7 +9,7 @@ describe("Currency Data Feed", function () {
 
     const ethPrice = await currencyDataFeed.getLatestPrice();
     const ethDecimals = await currencyDataFeed.decimals();
-    console.log("ETH Price returned in BRL: R$", ethPrice.toNumber() / 10 ** ethDecimals);
+    console.log("DataFeed: ETH Price returned in BRL: R$", ethPrice.toNumber() / 10 ** ethDecimals);
     expect(ethPrice).to.exist;
   });
 });
