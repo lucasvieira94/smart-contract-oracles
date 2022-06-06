@@ -21,7 +21,6 @@ const retrievePrice = async (currency) => {
     });
 
     const price = Math.round(response.data.data.quote.USD.price * (10 ** 8));
-    console.log(`${currency.toUpperCase()} price $${price / (10 ** 8)}`);
 
     return Promise.resolve(price);
 }

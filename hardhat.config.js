@@ -1,6 +1,8 @@
 require('dotenv').config();
 require("@nomiclabs/hardhat-waffle");
 require("hardhat-gas-reporter");
+require("./scripts/deployOracle");
+require("./scripts/getLatestPrice");
 
 module.exports = {
   solidity: "0.8.4",
