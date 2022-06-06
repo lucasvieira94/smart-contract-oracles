@@ -1,15 +1,27 @@
-# Basic Sample Hardhat Project
+# Smart Contract Oracles
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+This project implements a contract to explain Chainlink Data Feed usage and another one to build a custom oracle that can be provided with any data.
 
-Try running some of the following tasks:
+To test:
 
 ```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
 npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
+```
+
+To run oracle server:
+
+```shell
+node scripts/oracleServer.js
+```
+
+To deploy Currency Oracle on Rinkeby Network:
+
+```shell
+npx hardhat deploy --network rinkeby
+```
+
+To deploy get current price:
+
+```shell
+npx hardhat getprice --network rinkeby
 ```
